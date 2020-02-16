@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <style>
+        main h1 {
+            color: crimson;
+            background-color: antiquewhite;}
+        header nav ul li {
+    display: inline-block;
+    padding: 10px;}
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+        <ul>
+            <li>
+                <a href="">Home Page</a>  
+            </li>
+            <li>
+             <a href="">Movies List</a>
+            </li>
+            <li>
+             <a href="">Contact</a>  
+            </li>
+        </ul> 
+       </nav>
+         </header>
+        
+    <main>
+            <h1>Class 1 Lab</h1>
+            <article>
+                <p style="color: black; background-color:white; border-bottom:1px solid fuchsia;">
+                    what is your favorite movie type; crime, drama or comedy
+                </p>
+                
+                <p style="color: white; background-color: black; border-bottom:1px solid fuchsia; ">
+                    who is your favorite actor/actoress
+                </p>
+               <p style="color: coral; background-color: darkgray; border-bottom:1px solid fuchsia;" > 
+                Do you watch movies with subtitles?
+               </p>
+
+               <p style="color: darkred; background-color: gold;">
+                What do you want  the color of this page?
+               </p>
+
+            </article>
+    </main>
+
+    <footer>
+
+        <h3>Batool AlAli  </h3>
+    </footer>
+    <script>
+        var movieType = prompt("what is your favorite movie type; crime, drama or comedy");
+        console.log(movieType);
+        //alert("you entered " + movieType);
+        //document.write('<p>'+movieType+" is a good Choice"+'</p>');
+
+        var favActor = prompt("who is your favorite actor/actoress");
+        console.log(favActor);
+        //alert("your favorite actor is " + favActor);
+        //document.write('<p>' +"Your favorite actor is "+favActor+'</p>');
+       
+        var subtitle = prompt("Do you watch movies with subtitles?");
+        console.log(subtitle);
+
+       
+
+        var color = prompt("What do you want  the color of this page?")
+        console.log(color);
+        document.body.style.background= color;
+
+        alert("your favorite movie type is " + movieType + ", your favorite actor/actoress is " + favActor + ", Do you watch movies with subtitles?  " +subtitle + ", you chose " + color );
+   </script>
+</body>
+</html>
